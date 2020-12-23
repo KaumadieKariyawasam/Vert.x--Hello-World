@@ -16,7 +16,7 @@ public class MainVerticle extends AbstractVerticle {
             ctx.request().response().end(String.format("Hello %s!",name));
            
        });
-       vertx.createHttpServer().requestHandler(router).listen(8080);
+       vertx.createHttpServer().requestHandler(router).listen(8081);
     }
 
 }
